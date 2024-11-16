@@ -1,0 +1,46 @@
+#notification-container {
+    position: fixed;
+    bottom: 20%;
+    left: 8.5%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.notification {
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-width: 250px;
+    max-width: 250px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.7s ease forwards;
+}
+
+.notification.success { 
+    border: 3px solid #4caf50;
+    background: linear-gradient(145deg, #1f1f1f, #292929);
+}
+.notification.error { 
+    border: 3px solid  #f44336;
+    background: linear-gradient(145deg, #1f1f1f, #292929);
+}
+.notification.info { 
+    border: 3px solid  #2196f3;
+    background: linear-gradient(145deg, #1f1f1f, #292929);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
