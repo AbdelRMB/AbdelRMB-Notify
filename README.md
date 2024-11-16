@@ -23,3 +23,4 @@ Before using notifications, ensure you import the library in your client script:
 
 ```lua
 local Notifications = exports['AbdelRMBNotifications']
+```
