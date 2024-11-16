@@ -27,6 +27,6 @@ function showNotification(message, type, duration) {
 
 function playSound() {
     const audio = new Audio('notification.mp3');
-    audio.volume = 0.5;
+    audio.volume = 0.2;
     audio.play();
 }
